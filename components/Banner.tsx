@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Banner = () => {
   return (
     <section
-      className="relative w-7xl mx-auto rounded-3xl mt-10 -mb-10 h-[60vh] md:h-[75vh] flex items-center justify-center"
+      className="relative mx-6 lg:w-7xl md:mx-auto rounded-3xl mt-10 -mb-10 h-[35vh] md:h-[50vh] flex items-center justify-center"
       style={{
         backgroundImage: "url('/banner.jpg')",
         backgroundSize: 'cover',
