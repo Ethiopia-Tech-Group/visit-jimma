@@ -19,22 +19,33 @@ const georgia = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Visit Jimma - City of Saints | UNESCO World Heritage Site',
+    default: 'Visit Jimma – Among the pioneering tourism applications in East Africa.',
     template: '%s | Visit Jimma',
   },
-  description: "Discover Jimma's rich cultural heritage, history, and traditions through immersive storytelling and digital tourism",
-  keywords: ['Jimma', 'Ethiopia', 'UNESCO', 'tourism', 'cultural heritage', 'hyena feeding', 'Jugol Wall'],
+  description:
+    "Explore Jimma's royal legacy, cultural heritage, and historic landmarks including the palace of King Abba Jifar II and the rich traditions of the Gibe region.",
+  keywords: [
+    'Jimma',
+    'Ethiopia',
+    'Gibe Kingdom',
+    'Abba Jifar',
+    'Southwest Ethiopia',
+    'cultural heritage',
+    'tourism',
+    'Oromo culture',
+    'historical sites'
+  ],
   authors: [{ name: 'Ethiopia Tech Group' }],
   robots: 'index, follow',
   openGraph: {
-    title: 'Visit Jimma - City of Saints',
-    description: "Explore the culture, history, and heart of Ethiopia's most iconic city",
+    title: 'Visit Jimma – The Royal City of Abba Jifar',
+    description:
+      "Discover the history, culture, and stories of one of Ethiopia's most influential historical cities.",
     type: 'website',
     locale: 'en_US',
   },
 };
 
-// Export viewport separately
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -47,7 +58,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${georgia.variable}`}>
-      <body className="">
+      <body>
         <Header />
         {children}
       </body>
