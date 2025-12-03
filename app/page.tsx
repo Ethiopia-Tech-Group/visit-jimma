@@ -1,5 +1,6 @@
 // app/page.tsx
 'use client'
+import Banner from '@/components/Banner';
 import AboutUsDemo from '../components/About';
 import AudioStoriesDemo from '../components/AudioStoriesDemo';
 import Footer from '../components/Footer';
@@ -18,6 +19,7 @@ export default function Home() {
         
         <HistoryDemo />
         <AudioStoriesDemo />
+        <Banner />
         {/* <LeadershipSection /> */}
         <Footer />
         {/* 

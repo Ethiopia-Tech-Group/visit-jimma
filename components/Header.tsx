@@ -57,7 +57,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-all duration-300 hover:text-yellow-400 ${
+                className={`text-sm font-medium transition-all duration-300 hover:text-gold ${
                   pathname === item.href
                     ? isScrolled 
                       ? 'text-gold border-b-2 border-gold' 
@@ -78,7 +78,7 @@ const Header = () => {
             className={`lg:hidden p-2 rounded-md transition-colors duration-300 ${
               isScrolled 
                 ? 'text-gray-700 hover:text-gold hover:bg-gray-100' 
-                : 'text-white hover:text-yellow-400 hover:bg-white/10'
+                : 'text-white hover:text-gold hover:bg-white/10'
             }`}
             aria-label="Toggle menu"
           >
@@ -106,7 +106,7 @@ const Header = () => {
                         : 'text-gold bg-white/20'
                       : isScrolled
                         ? 'text-gray-700 hover:text-gold hover:bg-gray-50'
-                        : 'text-white hover:text-yellow-400 hover:bg-white/10'
+                        : 'text-white hover:text-gold hover:bg-white/10'
                   }`}
                 >
                   {item.name}
